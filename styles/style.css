@@ -98,12 +98,11 @@ nav {
   height: 7.7em;
   left: 0;
   top: 0;
-  background-color: white;
   display: flex;
   justify-content: center;
   transform: translateY(-100%);
   transition: ease 0.5s;
-  z-index: 10;
+  z-index: 100;
 }
 
 nav ul {
@@ -124,9 +123,9 @@ nav ul li {
 }
 
 nav ul li {
-  background-color: var(--bucksgroen);
-  color: var(--bucksbeige);
-  border-bottom: 1px solid var(--bucksbeige);
+  background-color: var(--bucksbeige);
+  color: var(--bucksgroen);
+  border-bottom: 1px solid var(--bucksgroen);
 }
 
 nav ul li a {
@@ -508,6 +507,16 @@ body.highlights section:nth-of-type(1) {
   align-items: center;
 }
 
+body.highlights section:nth-of-type(1) button {
+  position: absolute;
+  top: 20%;
+  background-color: var(--bucksbeige);
+  color: var(--bucksgroen);
+  font-size: 2em;
+  border: 1px solid var(--bucksbeige);
+  padding: 0.5em 0.5em;
+}
+
 /*
     videos
 */
@@ -515,9 +524,9 @@ body.highlights section:nth-of-type(1) {
 body.highlights section:nth-of-type(1) div:nth-of-type(1){
   position: absolute;
   left: 0;
-  top: 50vw;
+  top: 50.6vw;
   width: 100%;
-  height: 57vw;
+  height: 56vw;
   /* border: 1px solid red; */
 }
 
@@ -553,30 +562,16 @@ body.highlights section:nth-of-type(2) div:nth-of-type(1) {
   grid-gap: 0.5em;
 }
 
+body.highlights section:nth-of-type(2) div:nth-of-type(1) p {
+  grid-column: -1/1;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
 body.highlights section:nth-of-type(2) div:nth-of-type(1) button {
   background-color: var(--bucksgroen);
   color: var(--bucksbeige);
   font-size: 2em;
   border: 1px solid var(--bucksgroen);
   padding: 0.5em 0.5em;
-}
-
-body.highlights section:nth-of-type(2) div:nth-of-type(1) iframe {
-  z-index: 1;
-}
-
-body.highlights section:nth-of-type(2) div:nth-of-type(1) iframe:nth-of-type(1).laatDunksZien {
-  z-index: 10;
-}
-
-body.highlights section:nth-of-type(2) div:nth-of-type(1) iframe:nth-of-type(2).laatShootingZien {
-  z-index: 10;
-}
-
-body.highlights section:nth-of-type(2) div:nth-of-type(1) iframe:nth-of-type(3).laatPlaysZien {
-  z-index: 10;
-}
-
-body.highlights section:nth-of-type(2) div:nth-of-type(1) iframe:nth-of-type(1).laatDefenceZien {
-  z-index: 10;
 }
