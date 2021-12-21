@@ -24,15 +24,18 @@ deButton.addEventListener("click", doeCtaNeerEnOp);
 	var audio = new Audio ('./audio/giannis.mp3');
 	var count	= 0;
 	var muziekBtn = document.querySelector("body.highlights section:nth-of-type(1) button")
+  var musicBtn = document.querySelector("body.highlights section:nth-of-type(1) button p")
 
 	function speelMuziek(){
 		if(count==0){
 			count = 1;
 			audio.play();
+			musicBtn.innerHTML= "STOP!!";
 	}
 		else{
 			count = 0;
 			audio.pause();
+			musicBtn.innerHTML= "MUSIC!!";
 		}
 	}
 
