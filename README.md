@@ -115,21 +115,31 @@ Ik heb mijn vastloop punten opgelost en kan weer verder werken.
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### PNG als icoon
- Dropdown icoon is een afbeelding en kan niet met de screenreader bereikt worden.
+#### Menu dropdown icoon
+ De navigatie is te bereiken met een enkele tab, hiervoor hoef je niet eerst de tab te openen. Wel kom je bij het icoon om de navigatie te openen als je met een screenreader de website navigeert. Dit kan verwarring veroorzaken.
+ 
+ Er zijn twee oplossingen die ik hiervoor kan bedenken. De eerste is het icoon een naam geven waarbij iemand met een screenreader direct doorheeft dat dit icoon overgeslagen kan woorden. De tweede is de screenreader de image laten overslaan door middel van aria-hidden="true".
 
-Ik kan een svg maken van de icoon. Ook kan ik de image in een button zetten.
+#### Screenreader slaat interactie over
+Wanneer de screenreader alle text van de homepagina voorleest slaat hij de afbeelding met het team over en dus ook het interactieve element dat telkens een van de spelers tevoorschijn haalt.
 
-#### Tekst voorlezen lukt niet.
- Het lukte mij niet om de tekst voorgelezen te krijgen.
+Naar mijn mening hoeft hier geen oplossing voor te zijn. Het interactieve element is volledig visueel. Iemand die blind is zou hier geen gebruik van kunnen maken.
 
-Ik heb nog geen oplossing.
+#### Videoplayer
+Op de highlights pagina is een videoplayer met muted geluid. De screenreader weet wel dat het een videoplayer is maar een blind iemand zou hier dus niks aan hebben.
+ 
+Ik zou op dit probleem niet een concrete oplossing weten. Als de video geluid zou hebben zou het al wat beter werken, maar het idee van de muziek was dat je dat als geluid hebt.
+ 
+#### Knoppen
+De knoppen komen wel naar voren in de screenreader, alleen is het niet duidelijk dat deze de video aanpassen. Wanneer je op een knop drukt hoor je niks dat verandering aantoont. Je zou terug moeten navigeren om de tekst die verandert weer te kunnen horen.
+ 
+De oplossing hiervoor is aria-hidden gebruiken en in de tekst aangeven wat er gebeurt nadat de knop is ingedrukt.
 
-#### Veel plaatjes.
-  Ik gebruik veel afbeeldingen, deze geven vorm en structuur aan de website.
-
-Ik moet de alts van de afbeeldingen duidelijker maken zodat iemand met een screenreader het duidelijker begrijpt.
-
+#### radio buttons
+Wanneer de screenreader bij de radiobuttons is leest hij telkens: radio-button 1of1. Dit zou moeten zijn 1of4, 2of4 etc.
+ 
+Ik heb gegoogled naar dit probleem en kan geen oplossing vinden. Misschien is het altijd zo tegen mijn weten in.
+ 
 </details>
 
 
